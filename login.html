@@ -1,0 +1,69 @@
+<html>
+    <head>
+        <title>Login And Registration Form</title>
+        <link rel="stylesheet" href="style.css">
+        <style>
+            ::placeholder {
+              color: white;
+              opacity: 1; 
+            }
+            
+            :-ms-input-placeholder { 
+             color: white;
+            }
+            
+            ::-ms-input-placeholder { 
+             color: white;
+            }
+            </style>
+    </head>
+    <body>
+        <div class="hero">
+            <div class="contain">
+            <div class="form-box">
+                    <div class="button-box">
+                        <div id="btn"></div>
+                            <button type="button" class="toggle-btn" onclick="Login()">Login</button>
+                        
+                            <button type="button" class="toggle-btn" onclick="Register()">Register</button>                     
+                    </div>
+               
+                     <form id="Login" name="frm-Contact" method="post" action="log.php" class="input-group">
+                            <input type="text" name="username" class="input-field" placeholder="User Id" required id="username">
+                            <input type="password" name="password" class="input-field" placeholder="Password" required id="password">
+                            <input type="checkbox" class="check-box"><span>Remember Password</span>
+                            <button type="submit" class="submit-btn">Login</button>
+                    </form>
+                    <form id="Register" name="frmContact" method="post" action="db.php" class="input-group">
+                        <input type="text" name="username" class="input-field" placeholder="User Id" required>
+                        <input type="email" name="email" class="input-field" placeholder="Email Id" required>
+                        <input type="password" name="password" class="input-field" placeholder="Password" required>
+                        
+                        <input type="checkbox" class="check-box"><span>I Agree To The Terms And Conditions</span>
+                        <button type="submit" class="submit-btn">Register</button>
+                    </form>
+            </div>
+        </div>
+        </div>
+        <script>
+            var x= document.getElementById("Login");           
+            var y= document.getElementById("Register");         
+            var z= document.getElementById("btn");
+          
+            function Register(){
+                x.style.left = "-400px";
+                y.style.left = "50px";
+                z.style.left = "100px";
+               
+              
+            }
+            function Login(){
+                x.style.left = "50px";
+                y.style.left = "450px";
+                z.style.left = "00px";
+               
+            }
+        </script>
+  
+    </body>
+</html>
