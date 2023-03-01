@@ -1,0 +1,73 @@
+#gate_click{
+    /* background-color: red; */
+    display: inline-block;
+    margin-top: 20rem;
+    margin-left: 37rem;
+    padding-top: 8rem;
+    padding-bottom: 10rem;
+    padding-left: 7rem;
+}
+#keyhole{   
+    visibility: hidden;
+    width: 75%;
+    opacity: 0.8;
+    animation: wiggle 2s linear infinite;
+}
+#gate_click:hover #keyhole{
+    visibility: visible;
+}
+@keyframes wiggle {
+    0%, 7% {
+      transform: rotateZ(0);
+    }
+    15% {
+      transform: rotateZ(-15deg);
+    }
+    20% {
+      transform: rotateZ(10deg);
+    }
+    25% {
+      transform: rotateZ(-10deg);
+    }
+    30% {
+      transform: rotateZ(6deg);
+    }
+    35% {
+      transform: rotateZ(-4deg);
+    }
+    40%, 100% {
+      transform: rotateZ(0);
+    }
+  }
+#flash {
+    position: fixed;
+    background-color: white;
+    opacity: 0;
+    z-index: 1;
+    transition: opacity 0.5s ease-in-out;
+}
+ 
+/* Footer */
+footer {
+  position: relative;
+  padding: 55px 0;
+}
+
+footer ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+footer ul li {
+  margin-right: 30px;
+  color: #aaa;
+  text-transform: uppercase;
+  font-size: 13px;
+  line-height: 2.5;
+}
+
+ul {
+  list-style: none;
+}
