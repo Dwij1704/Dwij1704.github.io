@@ -1,7 +1,7 @@
 #gate_click{
     /* background-color: red; */
     display: inline-block;
-    margin-top: 20rem;
+    margin-top: 15rem;
     margin-left: 37rem;
     padding-top: 8rem;
     padding-bottom: 10rem;
@@ -13,6 +13,24 @@
     opacity: 0.8;
     animation: wiggle 2s linear infinite;
 }
+body{
+overflow-y:hidden;
+
+cursor: url(/res/rocket.png), auto;
+}
+
+/* Sections */
+section {
+	position: relative;
+	height: 100vh;
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	text-transform: uppercase;
+  }
+  /* Background images */
+  .section-a {box-shadow: 0px 50px 10px #00000077;
+  }
 #gate_click:hover #keyhole{
     visibility: visible;
 }
