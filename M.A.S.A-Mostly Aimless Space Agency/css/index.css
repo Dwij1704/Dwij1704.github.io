@@ -1,11 +1,12 @@
 #gate_click{
-    /* background-color: red; */
+    background-color: red;
     display: inline-block;
-    margin-top: 15rem;
-    margin-left: 37rem;
-    padding-top: 8rem;
-    padding-bottom: 10rem;
-    padding-left: 7rem;
+    margin-top: 19%;
+    margin-left: 43.5%;
+    padding-top: 9%;
+    padding-bottom: 10%;
+    padding-left: 4%;
+    padding-right: 4%;
 }
 #keyhole{   
     visibility: hidden;
