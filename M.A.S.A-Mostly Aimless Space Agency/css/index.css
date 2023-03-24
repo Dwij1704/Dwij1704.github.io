@@ -17,7 +17,12 @@ overflow-y:hidden;
 
 cursor: url(/res/rocket.png), auto;
 }
-
+.back-to-top {
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+  display: none;
+}
 /* Sections */
 section {
 	position: relative;
@@ -30,9 +35,9 @@ section {
   /* Background images */
   .section-a {box-shadow: 0px 50px 10px #00000077;
   }
-/* #gate_click:hover #keyhole{
+#gate_click:hover #keyhole{
     visibility: visible;
-} */
+}
 @keyframes wiggle {
     0%, 7% {
       transform: rotateZ(0);
