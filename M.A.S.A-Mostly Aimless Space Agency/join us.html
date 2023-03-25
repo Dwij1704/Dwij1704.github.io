@@ -71,7 +71,16 @@
                 <input type="checkbox" id="checkbox" name="checkbox" checked> Yes, I would like to receive communications by call / email about Company's services.
               </p>
               <p class="full-width">
-                <input type="submit" class="submit-btn" value="Submit">
+                <input type="submit" class="submit-btn" onclick="validate()" value="Submit">
+                <script>
+                  function validate(){
+                      var case_email= /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/
+                      let mail=document.getElementById("email").value
+                      if (case_email.test(mail)==false){
+                        alert("Enter Valid Email")
+                      }
+                  }
+                </script>
               </p>
             </form>
           </div>
